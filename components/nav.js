@@ -9,7 +9,7 @@ class Nav extends HTMLElement {
       <li><a href="/index.html">Home</a></li>
       <li><a href="../pages/aboutBlindness.html">About blindness</a></li>
       <li><a href="../pages/blindnessQandA.html">Blindness questions</a></li>
-      <li><a href="">Tools for the blind</a></li>
+      <li><a href="../pages/blindTools.html">Tools for the blind</a></li>
       <li><a href="">Resources for the blind</a></li>
     </ul>
   </nav>`;

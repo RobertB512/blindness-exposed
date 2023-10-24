@@ -14,8 +14,8 @@ html {
   font-size: 62.5%;
 }
 
-p, li, a {
-  font-size: 1.6rem;
+p, li, a, .explanation {
+  font-size: 2rem;
 }
 a {
   color: blue;
@@ -82,7 +82,9 @@ main {
   // background-position: center center;
   // background-repeat: no-repeat;
   
-  
+  .top-nav {
+    position: absolute;
+  }
   a {
     color: blue;
   }
@@ -145,7 +147,7 @@ be-top-nav {
 }
 
 .explanation {
-  font-size: 2rem;
+  // font-size: 2rem;
   width: 60rem;
 }
 .what-causes-blindness {
@@ -159,4 +161,33 @@ be-top-nav {
   .explanation {
     text-align: center;
   }
+}
+
+
+// ##### blindness q&a page #####
+.top-nav {
+  position: static;
+}
+.q-and-a-header {
+  text-align: center;
+  .large-font-span {
+    font-size: 10rem;
+    font-weight: 400;
+  }
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+
+  .question {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+
 }

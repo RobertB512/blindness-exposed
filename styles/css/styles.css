@@ -9,8 +9,8 @@ html {
   font-size: 62.5%;
 }
 
-p, li, a {
-  font-size: 1.6rem;
+p, li, a, .explanation {
+  font-size: 2rem;
 }
 
 a {
@@ -78,6 +78,9 @@ main {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../images/readingBraille.jpg) no-repeat center/cover;
   color: #fff;
 }
+.home-hero-header .top-nav {
+  position: absolute;
+}
 .home-hero-header a {
   color: blue;
 }
@@ -130,7 +133,6 @@ be-top-nav {
 }
 
 .explanation {
-  font-size: 2rem;
   width: 60rem;
 }
 
@@ -144,6 +146,31 @@ be-top-nav {
 }
 .what-causes-blindness .explanation {
   text-align: center;
+}
+
+.top-nav {
+  position: static;
+}
+
+.q-and-a-header {
+  text-align: center;
+}
+.q-and-a-header .large-font-span {
+  font-size: 10rem;
+  font-weight: 400;
+}
+
+.question-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+.question-wrapper .question {
+  display: flex;
+  flex-direction: column;
+}
+.question-wrapper:nth-of-type(even) {
+  flex-direction: row-reverse;
 }
 
 /*# sourceMappingURL=styles.css.map */

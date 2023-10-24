@@ -17,8 +17,54 @@ html {
 p, li, a {
   font-size: 1.6rem;
 }
-a:hover {
-  cursor: pointer;
+a {
+  color: blue;
+  &:hover {
+    cursor: pointer;
+  }
+}
+h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 4.5rem;
+}
+h3 {
+  font-size: 6rem;
+}
+h4 {
+  font-size: 3.5rem;
+}
+.content-wrapper, .img-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+// .explanation {
+//   width: 70%;
+// }
+img {
+  width: 40rem;
+  height: auto;
+}
+
+
+
+// common styles
+be-top-nav {
+  margin-bottom: 3rem;
+}
+.header-tagline {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+main {
+  padding: 3rem 5rem;
+}
+.section-wrapper {
+  display: flex;
+  margin-bottom: 5rem;
 }
 
 // homepage styles
@@ -35,19 +81,14 @@ a:hover {
   color: $secondary-color;
   // background-position: center center;
   // background-repeat: no-repeat;
-  .tag-line {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
+  
+  
   a {
     color: blue;
   }
 }
 
-h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-}
+
 be-top-nav {
   display: inline-block;
   width: 100vw;
@@ -71,5 +112,51 @@ be-top-nav {
     
 
     
+  }
+}
+
+
+// ##### ABOUT BLINDNESS PAGE #####
+.about-blindness {
+  .top-nav {
+    position: static;
+  }
+  background-color: $primary-color;
+  color: $secondary-color;
+  .section-wrapper {
+    justify-content: space-around;
+  }
+}
+.about-blindness-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+
+  .header-tagline {
+    margin-bottom: 0;
+  }
+}
+.what-is-blindness {
+  // justify-content: space-around;
+}
+
+.explanation {
+  font-size: 2rem;
+  width: 60rem;
+}
+.what-causes-blindness {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+
+  .img-wrapper {
+    margin: 0 auto;
+  }
+  .explanation {
+    text-align: center;
   }
 }

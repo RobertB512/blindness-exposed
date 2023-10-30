@@ -44,8 +44,9 @@ h4 {
 }
 
 img {
-  width: 40rem;
+  max-width: 60rem;
   height: auto;
+  border-radius: 1rem;
 }
 
 be-top-nav {
@@ -57,7 +58,7 @@ be-top-nav {
   margin-bottom: 2rem;
 }
 
-main {
+main, footer {
   padding: 3rem 5rem;
 }
 
@@ -68,6 +69,9 @@ main {
 
 footer {
   text-align: left;
+}
+footer ul {
+  list-style-position: inside;
 }
 
 .home-hero-header {
@@ -105,7 +109,7 @@ be-top-nav {
 .top-nav {
   position: absolute;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(22, 22, 23, 0.8);
   color: #fff;
   padding: 1.5rem 2rem;
   width: 100%;
@@ -118,6 +122,12 @@ be-top-nav {
 .top-nav ul a {
   text-decoration: none;
   color: #fff;
+}
+
+.about-blindness .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .about-blindness {

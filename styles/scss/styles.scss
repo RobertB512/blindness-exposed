@@ -31,7 +31,7 @@ h2 {
   font-size: 4.5rem;
 }
 h3 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 h4 {
   font-size: 3.5rem;
@@ -54,7 +54,7 @@ img {
 // common styles
 be-top-nav {
   margin-bottom: 3rem;
-  border-bottom: 0.2rem solid white;
+  // border-bottom: 0.2rem solid white;
 }
 .header-tagline {
   font-size: 2.5rem;
@@ -66,6 +66,9 @@ main {
 .section-wrapper {
   display: flex;
   margin-bottom: 5rem;
+}
+footer {
+  text-align: left;
 }
 
 // homepage styles
@@ -206,4 +209,60 @@ be-top-nav {
     flex-direction: row-reverse;
   }
 
+}
+
+
+// blindness tools styles
+
+.blindness-tools {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+}
+.blind-tools-header {
+  margin-bottom: 5rem;
+}
+.tool-wrapper {
+  display: flex;
+  grid-auto-flow: 3rem;
+  margin-bottom: 5rem;
+}
+
+.tool-wrapper:first-of-type {
+  flex-direction: column;
+  align-items: center;
+}
+.tool-wrapper:nth-of-type(3) {
+  flex-direction: row-reverse;
+}
+
+.tool-wrapper:nth-of-type(4), .tool-wrapper:nth-of-type(5) {
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.tool-wrapper:nth-of-type(4) .tool-detail-wrapper, .tool-wrapper:nth-of-type(5) .tool-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tool-wrapper:nth-of-type(7) {
+  flex-direction: row-reverse;
+}
+
+
+.tool-wrapper:nth-of-type(9), .tool-wrapper:nth-of-type(10) {
+  gap: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tool-wrapper:nth-of-type(9) .tool-detail-wrapper, .tool-wrapper:nth-of-type(10) .tool-detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }

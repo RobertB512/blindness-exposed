@@ -50,6 +50,7 @@ img {
 
 be-top-nav {
   margin-bottom: 3rem;
+  border-bottom: 0.2rem solid white;
 }
 
 .header-tagline {
@@ -81,8 +82,16 @@ main {
 .home-hero-header .top-nav {
   position: absolute;
 }
-.home-hero-header a {
+.home-hero-header .learn-more-link {
   color: blue;
+  text-decoration: none;
+}
+.home-hero-header .learn-more-link:after {
+  content: ">";
+  margin-left: 0.5rem;
+}
+.home-hero-header .learn-more-link:hover {
+  text-decoration: underline;
 }
 
 be-top-nav {

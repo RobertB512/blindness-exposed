@@ -54,6 +54,7 @@ img {
 // common styles
 be-top-nav {
   margin-bottom: 3rem;
+  border-bottom: 0.2rem solid white;
 }
 .header-tagline {
   font-size: 2.5rem;
@@ -85,10 +86,25 @@ main {
   .top-nav {
     position: absolute;
   }
-  a {
+  .learn-more-link {
     color: blue;
+    text-decoration: none;
+
+    &:after {
+      content: ">";
+      margin-left: 0.5rem;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+    
   }
+
+
 }
+
+
 
 
 be-top-nav {
